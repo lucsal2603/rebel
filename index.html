@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REBEL® — Brand Transformation Studio</title>
+  <meta name="description" content="Prendiamo brand invecchiati male e li trasformiamo in marchi moderni e riconoscibili. Rebranding, packaging, campagne.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23111111'/><text x='50' y='72' font-size='64' font-family='Arial Black' font-weight='900' fill='%234dff00' text-anchor='middle'>R</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Permanent+Marker&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══════════ LOADER ══════════ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-word">
+      <span class="ld">R</span><span class="ld">E</span><span class="ld">B</span><span class="ld">E</span><span class="ld">L</span><span class="ld ld-reg">®</span>
+    </div>
+    <p class="loader-tag">brand transformation studio</p>
+    <div class="loader-count"><span id="loadNum">0</span>%</div>
+  </div>
+
+  <!-- ══════════ CURSOR + SCIA ══════════ -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <span class="cursor-label" id="cursorLabel" aria-hidden="true"></span>
+  <div class="trail" id="trail" aria-hidden="true"></div>
+
+  <!-- ══════════ HEADER ══════════ -->
+  <header class="site-head">
+    <a href="#hero" class="head-logo" data-magnet="0.3">REBEL<sup>®</sup></a>
+    <p class="head-tag">brand&nbsp;transformation&nbsp;studio&nbsp;—&nbsp;brescia&nbsp;/&nbsp;milano</p>
+    <nav class="head-nav" aria-label="principale">
+      <a href="#loghi" class="roll"><span class="roll-in"><span>metodo</span><span>metodo</span></span></a>
+      <a href="#casi" class="roll"><span class="roll-in"><span>casi</span><span>casi</span></span></a>
+      <a href="#portfolio" class="roll"><span class="roll-in"><span>lavori</span><span>lavori</span></span></a>
+      <a href="#finale" class="roll roll--cta"><span class="roll-in"><span>contatti</span><span>contatti</span></span></a>
+    </nav>
+  </header>
+
+  <main>
+
+  <!-- ══════════ HERO (pinned) ══════════ -->
+  <section class="hero" id="hero" data-bg="#f1f1f1" data-ink="#111111">
+    <div class="hero-pin">
+      <h1 class="hero-title" aria-label="REBEL®">
+        <span class="hl">R</span><span class="hl">E</span><span class="hl">B</span><span class="hl">E</span><span class="hl">L</span><span class="hl hl-reg">®</span>
+      </h1>
+
+      <p class="hero-kicker">
+        <span class="strike-wrap">agenzia pubblicitaria
+          <svg class="doodle strike" viewBox="0 0 300 60" aria-hidden="true"><path data-draw d="M8,38 C70,22 150,20 292,26 M14,50 C90,30 200,38 284,14"/></svg>
+        </span>
+        <span class="scrawl-note">studio di trasformazione</span>
+      </p>
+
+      <div class="hero-media" data-cursor="reel">
+        <div class="hero-reel">
+          <video class="reel-video" src="video/showreel.mp4" autoplay muted loop playsinline preload="auto"></video>
+        </div>
+        <svg class="doodle hero-arrow" viewBox="0 0 160 110" aria-hidden="true"><path data-draw d="M12,100 C30,60 60,30 130,22 M130,22 l-24,-4 M130,22 l-6,22"/></svg>
+        <span class="pen-note pen-note--arrow">il nostro reel →</span>
+      </div>
+
+      <p class="hero-para scrub-words">Prendiamo aziende con un'immagine ferma a vent'anni fa e le trasformiamo in brand che la gente riconosce, ricorda e sceglie. Niente ritocchini: demolizione e ricostruzione totale.</p>
+
+      <p class="hero-scrawl">il tuo brand è<br>invecchiato male</p>
+
+      <svg class="doodle hero-x hero-x1" viewBox="0 0 60 60" aria-hidden="true"><path data-draw d="M10,12 L50,50 M50,10 L12,50"/></svg>
+      <svg class="doodle hero-x hero-x2" viewBox="0 0 60 60" aria-hidden="true"><path data-draw d="M10,12 L50,50 M50,10 L12,50"/></svg>
+      <svg class="doodle hero-spark" viewBox="0 0 100 100" aria-hidden="true"><path class="spark-fill" d="M50,2 L58,42 L98,50 L58,58 L50,98 L42,58 L2,50 L42,42 Z"/></svg>
+
+      <div class="scroll-ind" aria-hidden="true">
+        <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+        <span>scrolla</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ MANIFESTO — testi giganti ══════════ -->
+  <section class="manifesto" data-bg="#f1f1f1" data-ink="#111111">
+    <div class="mband mband-1"><span>DA VECCHIO ✦ A NUOVO ✦ DA VECCHIO ✦ A NUOVO ✦ DA VECCHIO ✦ A NUOVO ✦</span></div>
+    <div class="mband mband-2 mband--ghost"><span>RESTYLING? NO ✕ RIVOLUZIONE ✕ RESTYLING? NO ✕ RIVOLUZIONE ✕ RESTYLING? NO ✕</span></div>
+    <div class="mband mband-3"><span>DA INVISIBILE ✦ A <em>ICONICO</em> ✦ DA INVISIBILE ✦ A <em>ICONICO</em> ✦ DA INVISIBILE ✦</span></div>
+  </section>
+
+  <!-- ══════════ 01 LOGHI (pinned flip) ══════════ -->
+  <section class="loghi" id="loghi" data-bg="#f1f1f1" data-ink="#111111">
+    <div class="loghi-pin">
+      <header class="sec-head">
+        <p class="sec-label" data-reveal>( 01 — identità )</p>
+        <h2 class="sec-title" data-split>Il tuo logo<br>ha la tua età.</h2>
+        <p class="pen-note sec-note" data-reveal>scrolla: lo ringiovaniamo noi ↓</p>
+      </header>
+
+      <div class="logo-stage-wrap">
+        <!-- stage 1 -->
+        <div class="logo-stage" data-stage="1">
+          <div class="flip-meta flip-meta--l"><span class="flip-tag">PRIMA</span><span class="flip-year">vecchia sede</span><span class="flip-name">Torrefazione Ora</span></div>
+          <div class="flip-wrap">
+            <div class="flip-card flip-old">
+              <div class="ph ph--logo ph--photo"><img class="ph-img" src="img/logo-ora-old.jpg" alt="Vecchio logo ORA"></div>
+            </div>
+            <div class="flip-card flip-new">
+              <div class="ph ph--logo ph--dark ph--photo"><img class="ph-img" src="img/logo-ora-new.jpg" alt="Nuovo logo ORA"></div>
+            </div>
+          </div>
+          <div class="flip-meta flip-meta--r"><span class="flip-tag flip-tag--new">DOPO</span><span class="flip-year">2026</span><span class="flip-name">Ora® — caffè</span></div>
+        </div>
+        <!-- stage 2 -->
+        <div class="logo-stage" data-stage="2">
+          <div class="flip-meta flip-meta--l"><span class="flip-tag">PRIMA</span><span class="flip-year">est. 1981</span><span class="flip-name">Officine Tullio S.N.C.</span></div>
+          <div class="flip-wrap">
+            <div class="flip-card flip-old">
+              <div class="ph ph--logo ph--photo"><img class="ph-img" src="img/logo-tullio-old.jpg" alt="Vecchio logo Officina Tullio"></div>
+            </div>
+            <div class="flip-card flip-new">
+              <div class="ph ph--logo ph--dark ph--photo"><img class="ph-img" src="img/logo-tullio-new.jpg" alt="Nuovo logo GT Officina Tullio"></div>
+            </div>
+          </div>
+          <div class="flip-meta flip-meta--r"><span class="flip-tag flip-tag--new">DOPO</span><span class="flip-year">2026</span><span class="flip-name">Tullio® — hand tools</span></div>
+        </div>
+        <!-- stage 3 -->
+        <div class="logo-stage" data-stage="3">
+          <div class="flip-meta flip-meta--l"><span class="flip-tag">PRIMA</span><span class="flip-year">est. 1997</span><span class="flip-name">Bar Sport 2000</span></div>
+          <div class="flip-wrap">
+            <div class="flip-card flip-old">
+              <div class="ph ph--logo ph--photo"><img class="ph-img" src="img/logo-sport-old.jpg" alt="Vecchia insegna Bar Sport 2000"></div>
+            </div>
+            <div class="flip-card flip-new">
+              <div class="ph ph--logo ph--dark ph--photo"><img class="ph-img" src="img/logo-sport-new.jpg" alt="Nuovo logo Sport"></div>
+            </div>
+          </div>
+          <div class="flip-meta flip-meta--r"><span class="flip-tag flip-tag--new">DOPO</span><span class="flip-year">2026</span><span class="flip-name">Sport® — caffè &amp; cucina</span></div>
+        </div>
+
+        <div class="logo-progress"><span id="stageNum">01</span><span class="lp-sep">/</span><span>03</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ 02 PACKAGING (pinned rotate) ══════════ -->
+  <section class="pack" id="pack" data-bg="#f1f1f1" data-ink="#111111">
+    <div class="pack-pin">
+      <header class="sec-head sec-head--center">
+        <p class="sec-label" data-reveal>( 02 — packaging )</p>
+        <h2 class="sec-title" data-split>Ruota. Cambia. Vende.</h2>
+      </header>
+
+      <div class="pack-stage">
+        <ul class="pack-list pack-list--old">
+          <li>etichetta fatta in Word</li>
+          <li>dodici font diversi</li>
+          <li>clip-art del 1998</li>
+          <li>«ci pensa mio cugino»</li>
+        </ul>
+
+        <div class="pack-rotor" id="packRotor">
+          <div class="pack-obj">
+            <div class="ph ph--pack ph--photo">
+              <img class="ph-img pack-img-old" src="img/pack-lume-old.jpg" alt="Packaging LUME prima del redesign">
+              <img class="ph-img pack-img-new" src="img/pack-lume-new.jpg" alt="Packaging LUME dopo il redesign">
+            </div>
+          </div>
+          <div class="pack-shadow" aria-hidden="true"></div>
+        </div>
+
+        <ul class="pack-list pack-list--new">
+          <li>un sistema, non un caso</li>
+          <li>un font. quello giusto.</li>
+          <li>riconoscibile a 10 metri</li>
+          <li>ci pensa REBEL<sup>®</sup></li>
+        </ul>
+      </div>
+      <p class="pen-note pack-note">gira mentre scrolli, giuro ↓</p>
+    </div>
+  </section>
+
+  <!-- ══════════ 03 CAMPAGNE (fly-in) ══════════ -->
+  <section class="camp" id="camp" data-bg="#f1f1f1" data-ink="#111111">
+    <header class="sec-head">
+      <p class="sec-label" data-reveal>( 03 — campagne )</p>
+      <h2 class="sec-title" data-split>Poi invadiamo<br>tutto.</h2>
+      <p class="sec-sub" data-reveal>Poster, social, scrivanie, strade. Il nuovo brand deve stare ovunque — e da ogni direzione.</p>
+    </header>
+
+    <div class="camp-field">
+      <figure class="camp-item ci-poster" data-cursor="poster">
+        <div class="ph ph--photo"><img class="ph-img" src="img/camp-rumore-poster.jpg" alt="Campagna RUMORE — affissione"></div>
+        <figcaption>affissione — RUMORE</figcaption>
+      </figure>
+      <figure class="camp-item ci-desk" data-cursor="desk">
+        <div class="ph ph--photo"><img class="ph-img" src="img/camp-nodo-desk.jpg" alt="Stationery NODO"></div>
+        <figcaption>stationery — NODO<sup>®</sup></figcaption>
+      </figure>
+      <figure class="camp-item ci-social" data-cursor="social">
+        <div class="ph ph--photo"><img class="ph-img" src="img/camp-scatto-social.jpg" alt="Campagna SCATTO — social"></div>
+        <figcaption>social kit — SCATTO</figcaption>
+      </figure>
+      <figure class="camp-item ci-billboard" data-cursor="maxi">
+        <div class="ph ph--photo"><img class="ph-img" src="img/camp-brava-billboard.jpg" alt="Campagna BRAVA — maxi affissione"></div>
+        <figcaption>OOH — BRAVA</figcaption>
+      </figure>
+      <figure class="camp-item ci-merch" data-cursor="merch">
+        <div class="ph ph--photo"><img class="ph-img" src="img/camp-folla-merch.jpg" alt="Merch FOLLA"></div>
+        <figcaption>merch — FOLLA</figcaption>
+      </figure>
+      <svg class="doodle camp-spring" viewBox="0 0 120 120" aria-hidden="true"><path data-draw d="M60,10 C90,10 95,40 60,42 C30,44 28,68 60,70 C88,72 90,95 60,98"/></svg>
+    </div>
+  </section>
+
+  <!-- ══════════ MARQUEE AUTO ══════════ -->
+  <div class="tape tape--dark" aria-hidden="true">
+    <div class="tape-in" data-tape>
+      <span>CASI STUDIO ✦ PRIMA / DOPO ✦ CASI STUDIO ✦ PRIMA / DOPO ✦ CASI STUDIO ✦ PRIMA / DOPO ✦&nbsp;</span>
+      <span>CASI STUDIO ✦ PRIMA / DOPO ✦ CASI STUDIO ✦ PRIMA / DOPO ✦ CASI STUDIO ✦ PRIMA / DOPO ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ══════════ CASI STUDIO ══════════ -->
+  <section class="casi" id="casi">
+
+    <article class="caso" data-bg="#004fe4" data-ink="#f4f4f4">
+      <div class="caso-top">
+        <p class="caso-idx" data-reveal>caso — 01</p>
+        <h3 class="caso-name" data-split>ORA<sup>®</sup></h3>
+        <p class="caso-was" data-reveal><s>prima: «Caffè Morandi dal 1954»</s></p>
+        <p class="caso-cat" data-reveal>torrefazione — rebrand completo, packaging, e-commerce</p>
+      </div>
+      <div class="ba" data-cursor="scrolla">
+        <div class="ba-layer ba-after">
+          <div class="ph ph--photo"><img class="ph-img" src="img/caso-ora-after.jpg" alt="ORA — logo dopo il rebrand"></div>
+          <span class="ba-tag ba-tag--after">DOPO</span>
+        </div>
+        <div class="ba-layer ba-before">
+          <div class="ph ph--photo"><img class="ph-img" src="img/logo-ora-old.jpg" alt="ORA — vecchio logo"></div>
+          <span class="ba-tag ba-tag--before">PRIMA</span>
+        </div>
+        <span class="ba-line" aria-hidden="true"></span>
+      </div>
+      <dl class="caso-stats">
+        <div class="stat"><dt>riconoscibilità</dt><dd>+<span data-count="212">212</span>%</dd></div>
+        <div class="stat"><dt>vendite online</dt><dd>×<span data-count="3">3</span></dd></div>
+        <div class="stat"><dt>settimane di lavoro</dt><dd><span data-count="9">9</span></dd></div>
+      </dl>
+    </article>
+
+    <article class="caso" data-bg="#ff8fd8" data-ink="#111111">
+      <div class="caso-top">
+        <p class="caso-idx" data-reveal>caso — 02</p>
+        <h3 class="caso-name" data-split>LUNA<sup>®</sup></h3>
+        <p class="caso-was" data-reveal><s>prima: «Erboristeria Lunardi»</s></p>
+        <p class="caso-cat" data-reveal>skincare — naming, identità, direzione creativa social</p>
+      </div>
+      <div class="ba" data-cursor="scrolla">
+        <div class="ba-layer ba-after">
+          <div class="ph ph--photo"><img class="ph-img" src="img/caso-luna-after.jpg" alt="LUNA — logo dopo il rebrand"></div>
+          <span class="ba-tag ba-tag--after">DOPO</span>
+        </div>
+        <div class="ba-layer ba-before">
+          <div class="ph ph--photo"><img class="ph-img" src="img/caso-luna-before.jpg" alt="LUNA — vecchio logo"></div>
+          <span class="ba-tag ba-tag--before">PRIMA</span>
+        </div>
+        <span class="ba-line" aria-hidden="true"></span>
+      </div>
+      <dl class="caso-stats">
+        <div class="stat"><dt>engagement</dt><dd>+<span data-count="180">180</span>%</dd></div>
+        <div class="stat"><dt>follower in 6 mesi</dt><dd><span data-count="47">47</span>k</dd></div>
+        <div class="stat"><dt>retailer nuovi</dt><dd><span data-count="26">26</span></dd></div>
+      </dl>
+    </article>
+
+    <article class="caso" data-bg="#ffd900" data-ink="#111111">
+      <div class="caso-top">
+        <p class="caso-idx" data-reveal>caso — 03</p>
+        <h3 class="caso-name" data-split>TITAN<sup>®</sup></h3>
+        <p class="caso-was" data-reveal><s>prima: «Officine Titanio S.p.A.»</s></p>
+        <p class="caso-cat" data-reveal>utensili pro — rebrand, packaging, fiere internazionali</p>
+      </div>
+      <div class="ba" data-cursor="scrolla">
+        <div class="ba-layer ba-after">
+          <div class="ph ph--photo"><img class="ph-img" src="img/caso-titan-after.jpg" alt="TITAN — logo dopo il rebrand"></div>
+          <span class="ba-tag ba-tag--after">DOPO</span>
+        </div>
+        <div class="ba-layer ba-before">
+          <div class="ph ph--photo"><img class="ph-img" src="img/caso-titan-before.jpg" alt="TITAN — vecchio logo"></div>
+          <span class="ba-tag ba-tag--before">PRIMA</span>
+        </div>
+        <span class="ba-line" aria-hidden="true"></span>
+      </div>
+      <dl class="caso-stats">
+        <div class="stat"><dt>ricordo del marchio</dt><dd>+<span data-count="95">95</span>%</dd></div>
+        <div class="stat"><dt>paesi di export</dt><dd><span data-count="12">12</span></dd></div>
+        <div class="stat"><dt>fatturato anno 1</dt><dd>+<span data-count="41">41</span>%</dd></div>
+      </dl>
+    </article>
+
+  </section>
+
+  <!-- ══════════ NUMERI ══════════ -->
+  <section class="numeri" data-bg="#f1f1f1" data-ink="#111111">
+    <header class="sec-head sec-head--center">
+      <p class="sec-label" data-reveal>( i numeri )</p>
+      <h2 class="sec-title" data-split>I numeri non mentono.<br>I vecchi loghi sì.</h2>
+    </header>
+    <div class="num-grid">
+      <div class="num-cell" data-reveal><span class="num-big"><span data-count="23">23</span></span><span class="num-lab">rebrand completi</span></div>
+      <div class="num-cell" data-reveal><span class="num-big">+<span data-count="214">214</span>%</span><span class="num-lab">crescita media post-rebrand</span></div>
+      <div class="num-cell" data-reveal><span class="num-big"><span data-count="9">9</span></span><span class="num-lab">premi di design</span></div>
+      <div class="num-cell" data-reveal><span class="num-big"><span data-count="0">0</span></span><span class="num-lab">clienti tornati al vecchio logo<svg class="doodle num-under" viewBox="0 0 200 20" aria-hidden="true"><path data-draw d="M5,14 L40,6 L75,15 L110,5 L145,14 L180,7 L196,12"/></svg></span></div>
+    </div>
+  </section>
+
+  <!-- ══════════ MARQUEE AUTO 2 ══════════ -->
+  <div class="tape tape--neon" aria-hidden="true">
+    <div class="tape-in" data-tape>
+      <span>PORTFOLIO ✕ TIENI SCROLLATO ✕ PORTFOLIO ✕ TIENI SCROLLATO ✕ PORTFOLIO ✕ TIENI SCROLLATO ✕&nbsp;</span>
+      <span>PORTFOLIO ✕ TIENI SCROLLATO ✕ PORTFOLIO ✕ TIENI SCROLLATO ✕ PORTFOLIO ✕ TIENI SCROLLATO ✕&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ══════════ PORTFOLIO ORIZZONTALE (pinned) ══════════ -->
+  <section class="folio" id="portfolio" data-bg="#f1f1f1" data-ink="#111111">
+    <div class="folio-pin">
+      <header class="sec-head folio-head">
+        <p class="sec-label">( 04 — portfolio )</p>
+        <h2 class="sec-title">Scorri di lato,<br>scrollando in giù.</h2>
+        <p class="pen-note">magia? no, GSAP →</p>
+      </header>
+
+      <div class="folio-track" id="folioTrack">
+        <figure class="fcard" data-cursor="vedi">
+          <div class="ph ph--photo"><img class="ph-img" src="img/caso-ora-after.jpg" alt="ORA key visual"></div>
+          <figcaption><span class="fc-name">ORA<sup>®</sup></span><span class="fc-meta">torrefazione — 2026</span></figcaption>
+        </figure>
+        <figure class="fcard" data-cursor="vedi">
+          <div class="ph ph--photo"><img class="ph-img" src="img/caso-luna-after.jpg" alt="LUNA key visual"></div>
+          <figcaption><span class="fc-name">LUNA<sup>®</sup></span><span class="fc-meta">skincare — 2026</span></figcaption>
+        </figure>
+        <figure class="fcard" data-cursor="vedi">
+          <div class="ph ph--photo"><img class="ph-img" src="img/caso-titan-after.jpg" alt="TITAN key visual"></div>
+          <figcaption><span class="fc-name">TITAN<sup>®</sup></span><span class="fc-meta">utensili — 2025</span></figcaption>
+        </figure>
+        <figure class="fcard" data-cursor="vedi">
+          <div class="ph"><div class="ph-in"><span class="ph-cap">FOTO — key visual VOLT<sup>®</sup><br>(verticale 4:5)</span></div></div>
+          <figcaption><span class="fc-name">VOLT<sup>®</sup></span><span class="fc-meta">energia — 2025</span></figcaption>
+        </figure>
+        <figure class="fcard" data-cursor="vedi">
+          <div class="ph ph--photo"><img class="ph-img" src="img/camp-nodo-desk.jpg" alt="NODO key visual"></div>
+          <figcaption><span class="fc-name">NODO<sup>®</sup></span><span class="fc-meta">moda — 2024</span></figcaption>
+        </figure>
+        <figure class="fcard fcard--last" data-cursor="ciao">
+          <div class="fcard-cta"><span>il prossimo<br>può essere<br>il tuo</span><svg class="doodle" viewBox="0 0 160 110" aria-hidden="true"><path data-draw d="M20,20 C60,40 100,70 138,88 M138,88 l-6,-22 M138,88 l-24,2"/></svg></div>
+        </figure>
+      </div>
+
+      <div class="folio-bar"><span class="folio-bar-fill" id="folioBar"></span></div>
+    </div>
+  </section>
+
+  <!-- ══════════ FINALE ══════════ -->
+  <section class="finale" id="finale" data-bg="#0d0d0d" data-ink="#f1f1f1">
+    <h2 class="finale-title scrub-words">Il tuo brand è pronto a cambiare?</h2>
+    <div class="finale-si">
+      <span class="finale-scrawl">sì.</span>
+      <svg class="doodle finale-circle" viewBox="0 0 220 130" aria-hidden="true"><path data-draw d="M30,70 C20,25 100,8 160,18 C210,27 218,80 165,102 C110,124 28,112 26,68 C25,40 80,22 130,26"/></svg>
+    </div>
+    <a class="btn-cta" href="mailto:hello@rebel.studio" data-magnet="0.35">
+      <span class="btn-cta-txt">parliamone</span>
+      <span class="btn-cta-arrow">→</span>
+    </a>
+    <p class="finale-mail">oppure scrivici con calma: <a href="mailto:hello@rebel.studio" class="u-link">hello@rebel.studio</a></p>
+  </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer" data-bg="#0d0d0d" data-ink="#f1f1f1">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <p class="foot-lab">studio</p>
+        <p>Via dei Ribelli 26<br>25121 Brescia — IT</p>
+      </div>
+      <div class="foot-col">
+        <p class="foot-lab">contatti</p>
+        <p><a href="mailto:hello@rebel.studio" class="u-link">hello@rebel.studio</a><br><a href="tel:+390300000000" class="u-link">+39 030 000 0000</a></p>
+      </div>
+      <div class="foot-col">
+        <p class="foot-lab">social</p>
+        <p>
+          <a href="#" class="u-link" aria-label="Instagram">instagram</a><br>
+          <a href="#" class="u-link" aria-label="Behance">behance</a><br>
+          <a href="#" class="u-link" aria-label="LinkedIn">linkedin</a>
+        </p>
+      </div>
+      <div class="foot-col foot-col--r">
+        <p class="foot-lab">© 2026</p>
+        <p>REBEL<sup>®</sup> s.r.l.<br>tutti i brand vecchi<br>sono avvisati</p>
+      </div>
+    </div>
+    <p class="foot-giant" aria-hidden="true">REBEL<sup>®</sup></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
