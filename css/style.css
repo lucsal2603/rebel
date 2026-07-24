@@ -626,13 +626,6 @@ body.nav-open .head-burger span:last-child { transform: translateY(-4.75px) rota
   .scrawl-note { font-size: 8vw; }
   .scroll-ind { bottom: 4.5vh; }
 
-  /* campagne: colonna singola ordinata */
-  .camp { padding: 12vh 0 6vh; }
-  .camp-field { height: auto; margin-top: 6vh; display: flex; flex-direction: column; gap: 7vh; padding: 0 6vw; }
-  .camp-item { position: relative; inset: auto; width: 100% !important; margin: 0; rotate: 0deg !important; }
-  .camp-item figcaption { font-size: 12px; }
-  .camp-spring { display: none; }
-
   /* rifiniture varie */
   .sec-title { font-size: 12.5vw; }
   .hero-kicker, .sec-sub { max-width: 90vw; }

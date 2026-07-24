@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 const REDUCE = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   || new URLSearchParams(location.search).has('static');
 const TOUCH = window.matchMedia('(hover: none), (pointer: coarse)').matches;
-const MOBILE = window.matchMedia('(max-width: 700px)').matches;
 const $ = (s, c = document) => c.querySelector(s);
 const $$ = (s, c = document) => [...c.querySelectorAll(s)];
 
@@ -219,30 +218,20 @@ packTl
   .to('.pack-note', { autoAlpha: 0, duration: 0.3 }, 2.5);
 
 /* ═════════ 03 CAMPAGNE — arrivano da ogni direzione ═════════ */
-if (!MOBILE) {
-  const campTl = gsap.timeline({
-    scrollTrigger: { trigger: '.camp-field', start: 'top 92%', end: 'bottom 55%', scrub: 1.2 }
-  });
-  campTl
-    .from('.ci-poster', { x: '-70vw', rotation: -32, duration: 0.62, ease: 'power2.out', immediateRender: true }, 0)
-    .from('.ci-social', { x: '70vw', rotation: 30, duration: 0.62, ease: 'power2.out', immediateRender: true }, 0.1)
-    .from('.ci-desk', { y: '75vh', rotation: 16, duration: 0.65, ease: 'power2.out', immediateRender: true }, 0.2)
-    .from('.ci-billboard', { y: '-65vh', x: '25vw', rotation: -20, duration: 0.65, ease: 'power2.out', immediateRender: true }, 0.34)
-    .from('.ci-merch', { x: '-60vw', y: '30vh', rotation: 24, duration: 0.62, ease: 'power2.out', immediateRender: true }, 0.48);
-  prepDraw($('.camp-spring'));
-  gsap.to($$('.camp-spring [data-draw]'), {
-    strokeDashoffset: 0, duration: 1, ease: 'power2.inOut',
-    scrollTrigger: { trigger: '.camp-field', start: 'top 70%' }
-  });
-} else {
-  /* mobile: colonna singola, reveal semplice dal basso */
-  $$('.camp-item').forEach(item => {
-    gsap.from(item, {
-      y: 50, autoAlpha: 0, duration: 0.9, ease: 'expo.out',
-      scrollTrigger: { trigger: item, start: 'top 90%', once: true }
-    });
-  });
-}
+const campTl = gsap.timeline({
+  scrollTrigger: { trigger: '.camp-field', start: 'top 92%', end: 'bottom 55%', scrub: 1.2 }
+});
+campTl
+  .from('.ci-poster', { x: '-70vw', rotation: -32, duration: 0.62, ease: 'power2.out', immediateRender: true }, 0)
+  .from('.ci-social', { x: '70vw', rotation: 30, duration: 0.62, ease: 'power2.out', immediateRender: true }, 0.1)
+  .from('.ci-desk', { y: '75vh', rotation: 16, duration: 0.65, ease: 'power2.out', immediateRender: true }, 0.2)
+  .from('.ci-billboard', { y: '-65vh', x: '25vw', rotation: -20, duration: 0.65, ease: 'power2.out', immediateRender: true }, 0.34)
+  .from('.ci-merch', { x: '-60vw', y: '30vh', rotation: 24, duration: 0.62, ease: 'power2.out', immediateRender: true }, 0.48);
+prepDraw($('.camp-spring'));
+gsap.to($$('.camp-spring [data-draw]'), {
+  strokeDashoffset: 0, duration: 1, ease: 'power2.inOut',
+  scrollTrigger: { trigger: '.camp-field', start: 'top 70%' }
+});
 
 /* ═════════ TAPE — marquee infiniti ═════════ */
 $$('.tape').forEach(tape => {
