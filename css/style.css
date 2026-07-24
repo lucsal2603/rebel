@@ -572,9 +572,13 @@ body.nav-open .head-burger span:last-child { transform: translateY(-4.75px) rota
   .flip-wrap { width: 64vw; height: 64vw; }
   .flip-fakename { font-size: 3.4vw; }
   .flip-biglogo { font-size: 7vw; }
-  .pack-stage { grid-template-columns: 1fr; gap: 4vh; padding: 0 8vw; }
-  .pack-list--old { text-align: left; }
-  .pack-rotor { margin: 0 auto; width: 50vw; }
+  /* packaging: come desktop (liste ai lati della bottiglia) ma compatto, così entra nel pin */
+  .pack-pin { padding-top: 10vh; }
+  .pack-stage { height: auto; margin-top: 4vh; gap: 3vw; padding: 0 4vw; align-items: center; }
+  .pack-rotor { width: 34vw; }
+  .pack-list { gap: 1.6vh; }
+  .pack-list li { font-size: 13px; }
+  .pack-note { position: static; transform: rotate(-3deg); margin: 4vh auto 0; text-align: center; }
   .camp-item { width: 42vw !important; }
   .ci-desk { left: 40vw; } .ci-billboard { width: 60vw !important; }
   .caso-name { font-size: 18vw; }
